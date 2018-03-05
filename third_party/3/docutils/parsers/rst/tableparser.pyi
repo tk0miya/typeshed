@@ -4,7 +4,7 @@
 
 from docutils import DataError
 from docutils.statemachine import StringList
-from typing import Any, Dict, List, Optional, Pattern, Tuple
+from typing import Dict, List, Optional, Pattern, Tuple
 
 Cell = Tuple[int, int, int, List[str]]
 Row = List[Optional[Cell]]
@@ -13,7 +13,7 @@ Colspecs = List[int]
 __docformat__: str
 
 class TableMarkupError(DataError):
-    offset: Any = ...
+    offset: int = ...
     def __init__(self, *args, **kwargs) -> None: ...
 
 class TableParser:
