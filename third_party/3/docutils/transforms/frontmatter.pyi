@@ -5,7 +5,7 @@
 from _sre import SRE_Pattern
 from docutils.nodes import Bibliographic, docinfo, field_list, Node, topic, Text
 from docutils.transforms import Transform
-from typing import Any, ClassVar, Dict, List, Optional, Union
+from typing import ClassVar, Dict, List, Optional, Union
 
 __docformat__: str
 
